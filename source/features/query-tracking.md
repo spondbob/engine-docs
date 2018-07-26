@@ -78,7 +78,7 @@ becomes
 query Foo{user(id:""){name timezone...Baz}}fragment Baz on User{dob}
 ```
 
-> A reference implementation of query signatures is available [here](https://github.com/apollographql/apollo-engine-reporting/blob/master/src/signature.ts).
+> A reference implementation of query signatures is available [here](https://github.com/apollographql/apollo-server/blob/master/packages/apollo-engine-reporting/src/signature.ts).
 
 <h3 id="signatures-sensitive-data">Signatures and sensitive data</h3>
 
