@@ -4,7 +4,7 @@ sidebar_title: Node with Engine Proxy
 description: Get Engine Proxy running with your Node.js GraphQL server.
 ---
 
-> **Note:** For new development, we suggest [enabling Engine in Apollo Server 2](./setup-apollo-server.html), which no longer requires the Engine Proxy. If Engine Proxy is already a part of your infrastructure and you depend on the full response caching, this guide explains how to keep using the Engine Proxy with Apollo Server 2.
+> **Note:** For new development, we suggest [enabling Engine in Apollo Server 2](https://www.apollographql.com/docs/apollo-server/features/metrics.html#Apollo-Engine), which no longer requires the Engine Proxy. If Engine Proxy is already a part of your infrastructure and you depend on the full response caching, this guide explains how to keep using the Engine Proxy with Apollo Server 2.
 
 We encourage you to <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">contact us</a> with feedback or help if you encounter problems using Engine with your application. You can also join us in the public [#engine Slack Channel](https://www.apollographql.com/slack).
 
