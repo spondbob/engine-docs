@@ -88,7 +88,7 @@ The biggest benefit of collecting the cache hints on a per-field basis is that y
 
 <h4 id="public-vs-private">Public vs. private scope</h4>
 
-Apollo Engine supports caching of personalized responses using the `scope: PRIVATE` cache hint. Private caching requires Engine identify unique users, using the methods defined in the `sessionAuth` configuration section.
+Apollo Engine supports caching of personalized responses using the `scope: PRIVATE` cache hint. Private caching requires that Engine identify unique users, using the methods defined in the `sessionAuth` configuration section.
 
 Engine supports extracting users' identity from an HTTP header (specified in `header`), or an HTTP cookie (specified in `cookie`).
 
