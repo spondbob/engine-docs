@@ -200,4 +200,4 @@ Using a GraphQL server that is currently running is recommended since it can be 
 For cases where running the GraphQL server _isn't_ possible, the `--endpoint` may also refer to a local file, either:
 
 1.  A `.json` file with the introspection query result. (e.g. `--endpoint=schema.json`)
-2.  A file with the schema in the GraphQL schema definition language (SDL). (e.g. `--endpoint=schema.txt`)
+2.  A file with the schema in the GraphQL schema definition language (SDL). (e.g. `--endpoint=schema.graphql`)
