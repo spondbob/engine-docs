@@ -7,9 +7,11 @@ description: Detailed information about Apollo Engine's plans and billing.
 
 Engine is free for up to 1 million requests per month on the **Community** plan. Beyond that, we offer two subscription plans: **Standard** and **Pro**. Both Standard and Pro have tiered pricing options, longer data retention, and more features than the Community plan. You can view their details, feature breakdowns, and pricing charts <a href="https://www.apollographql.com/engine#plans" target="_blank">here</a>.
 
+Engine is not free if your account is sending more than 1 million requests a month. If your account exceeds that limit you will be blocked from seeing your data and asked to upgrade to a paid plan.
+
 ### Trial Engine Pro
 
-Every Engine account is eligible for a free 2 week trial of Engine Pro, our most advanced plan, at any time, no credit card required. At the end of your Pro trial, you will be able to select which version of Engine you'd like to continue with.
+Every Engine account is eligible for a free 2 week trial of Engine Pro, our most advanced plan, at any time, no credit card required. At the end of your Pro trial, you will be able to select which version of ngine you'd like to continue with.
 
 ### Subscription interval options
 
@@ -40,8 +42,6 @@ Engine plans are priced by the number of requests Engine records data for, accum
 ### Fluctuations in query volume
 
 If your query volume decreases to a different volume tier, you may request a downgrade to take place at your next renewal date (monthly or annual). Engine will not automatically downgrade you to a lower volume plan. Engine query volume in your plan is based on a “use-it-or-lose it” maximum limit — there is no “rollover” or credit for unused monthly volume for monthly or annual plan customers.
-
-
 
 ## Billing and payment
 
