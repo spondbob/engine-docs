@@ -14,7 +14,7 @@ We have been complying with GDPR since before it became enforceable on May 25, 2
 
 <h3 id="affect">How will GDPR affect the way companies use MDG's products or services?</h3>
 
-Our products and services are not intended to be used for processing personal data. Our products and services are focused on software, systems, and applications - not individuals. If a customer wishes to set up a custom API, custom attribute, or custom event to track such data, it may do so. Our processing is data agnostic and automated, so all data will be processed in the same way in accordance with a customer’s configuration. If, however, a customer believes that it has included personal data in the information processed by MDG, we will assist the customer in meeting its obligations in accordance with the requirements of GDPR and the terms of our Data Processing Agreement.
+Our products and services are not intended to be used for processing personal data. Our products and services are focused on software, systems, and applications - not individuals. If a customer wishes to set up a custom API, custom attribute, or custom event to track such data, it may do so. Our processing is data agnostic and automated, so all data is processed in the same way in accordance with a customer’s configuration. If, however, a customer believes that it has included personal data in the information processed by MDG, we will assist the customer in meeting its obligations in accordance with the requirements of GDPR and the terms of our Data Processing Agreement.
 
 <h3 id="assist">How can MDG assist customers in meeting their obligations under GDPR?</h3>
 
@@ -27,7 +27,7 @@ As a Processor, we will assist customers in fulfilling their obligations as data
 
 <h3 id="requests">How can MDG help address requests from Data Subjects?</h3>
 
-MDG is implementing a process to intake, review, and fulfill customer requests arising from Data Subject Access Requests (DSAR) they receive. As a result of a DSAR, customers might request that MDG securely delete or return the Data Subject’s personal data. Due to their sensitivity, such requests will be handled by MDG on a case-by-case basis.
+MDG has implemented a process to intake, review, and fulfill customer requests arising from Data Subject Access Requests (DSAR) they receive. As a result of a DSAR, customers might request that MDG securely delete or return the Data Subject’s personal data. Due to their sensitivity, such requests will be handled by MDG on a case-by-case basis.
 
 <h3 id="policies">Where can I learn more about MDG's security and privacy policies?</h3>
 
