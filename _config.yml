@@ -30,8 +30,8 @@ sidebar_categories:
     - 1.0-migration
   Reference:
     - accounts
-    - data-privacy
     - billing
+    - data-privacy
     - gdpr
 github_repo: apollographql/engine-docs
 
