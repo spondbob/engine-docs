@@ -13,7 +13,7 @@ Every Engine account is eligible for a free 2 week trial of Engine Pro, our most
 
 ### Subscription interval options
 
-Engine Standard and Pro subscriptions can be opted into annually or month-to-month. You can start on a monthly billing plan for Engine and switch to a pre-paid annual plan at any time by <a onclick="Intercom('showNewMessage')">contacting us</a>. You can view the pricing difference of paying annually vs. month-to-month [here](https://www.apollographql.com/engine#pricing). All annual plans are 20% discounted from the regular month-to-month prices. 
+Engine Standard and Pro subscriptions can be opted into annually or month-to-month. You can start on a monthly billing plan for Engine and switch to a pre-paid annual plan at any time by <a href="mailto:support@apollographql.com">contacting us</a>. You can view the pricing difference of paying annually vs. month-to-month [here](https://www.apollographql.com/engine#pricing). All annual plans are 20% discounted from the regular month-to-month prices. 
 
 ### Viewing your plan and usage
 
@@ -49,7 +49,7 @@ You will be charged for your Engine subscription plan at the beginning of each u
 
 Engine subscriptions can be purchased using any major credit card (Visa, MasterCard, American Express, and Discover) or PayPal. You can view and update your payment method in the Settings page f your Engien account.
 
-Depending on the size of the invoice and billing term, you may arrange for alternative payment methods. Please <a onclick="Intercom('showNewMessage')">contact our solutions team</a> for more details.
+Depending on the size of the invoice and billing term, you may arrange for alternative payment methods. Please <a href="mailto:support@apollographql.com">contact our solutions team</a> for more details.
 
 You can access all past invoices for your Engine account in the Settings page of your account. The billing contact of your account will also receive a statement via email.
 

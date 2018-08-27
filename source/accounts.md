@@ -2,7 +2,7 @@
 title: Accounts
 ---
 
-Engine accounts are authenticated using GitHub. If that doesn't work for your team and you need another login option to be able to use Engine, please write in to our <a onclick="Intercom('showNewMessage')">support</a> and let us know!
+Engine accounts are authenticated using GitHub. If that doesn't work for your team and you need another login option to be able to use Engine, please write in to our <a href="mailto:support@apollographql.com">support</a> and let us know!
 
 ## Team collaboration
 
