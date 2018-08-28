@@ -15,7 +15,7 @@ When you sign in to Engine, you will have access to each account owned by a GitH
 
 If you’d like to work with additional team members and you are the admin of a GitHub organization, simply add them to your GitHub organization. If you aren’t an admin, have an admin add you to their GitHub organization.
 
-## Adding an organization after signing up for Engine
+## Adding an organization
 
 If you're looking for a GitHub organization that you're a member of and don't see it in Engine, it's likely that Engine does not have read access for that organization.
 
@@ -24,13 +24,13 @@ If you want to Add or Remove an organization from Engine, you should manage thos
 If you're logged in to Engine, you can manage those settings on GitHub [here](https://engine-graphql.apollographql.com/github/manage). Changes to your GitHub settings will only be visible in Engine after logging out and back in or waiting up to 30 minutes.
 
 
-## Why does Engine need access to my GitHub organizations?
+## GitHub permissions
 
 GitHub’s OAuth service is used for read-only information about organizations and users. Engine does not need access rights to your source code or to any other sensitive data in its login system.
 
 If your Engine account is owned by a GitHub organization, then Engine will allow all members of that organization to access the account. As you add or remove team members from your Github org, Engine will know about that and accordingly update the authorization for those users.
 
-## Supporting non-GitHub logins and teams
+## Support for non-GitHub login
 
 Engine was built to mirror GitHub's login and does not currently support other forms of login or team creation. While we will build support for login through other account systems eventually, our current recommendation for teams who want to use Engine but do not use GitHub is:
 1. Create a free GitHub organization (empty, public).
