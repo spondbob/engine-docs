@@ -30,6 +30,7 @@ sidebar_categories:
     - 1.0-migration
   Reference:
     - accounts
+    - services
     - billing
     - data-privacy
     - gdpr
