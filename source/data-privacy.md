@@ -82,7 +82,7 @@ If either Apollo Server 2 or the Engine proxy sees a response with an `"errors"`
 
 You can disable reporting errors to the out-of-band Engine cloud service like so:
 
-- **Apollo Server 2** – use the [`reportErrorFunction` option](https://www.apollographql.com/docs/apollo-server/api/apollo-server#EngineReportingOptions) to change how your errors are reported to the Engine service or to not report them at all.
+- **Apollo Server 2** – you cannot disbale error reporting with Apollo Server 2 today, but we're tracking the issue [here](https://github.com/apollographql/apollo-server/issues/1613).
 - **Engine proxy** – use the [`noTraceErrors` option](./proxy-config.html#Reporting) to disable sending error traces to the Engine cloud service.
 
 #### Disable Reporting (Engine proxy)
