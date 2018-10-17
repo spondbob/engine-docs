@@ -46,4 +46,4 @@ We've constructed the report provided to give you an actionable summary of what'
 
 <h3 id="click-operation">Getting operation details</h3>
 
-Each operation that appears in the report is a link, so you can get right from the report in Slack to the relevant view in Engine to get more details about the issue. For example, you might want to look at the [trace view](../features/query-tracking.html) to debug a performance problem, or the [error page](../features/error-tracking.html) to get the message and reproduction info for a common error.
+Each operation that appears in the report is a link, so you can get right from the report in Slack to the relevant view in Engine to get more details about the issue. For example, you might want to look at the [trace view](../features/query-tracing.html) to debug a performance problem, or the [error page](../features/error-tracking.html) to get the message and reproduction info for a common error.

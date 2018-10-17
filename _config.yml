@@ -9,7 +9,7 @@ sidebar_categories:
     - features/schema-explorer
     - features/schema-history
     - features/performance
-    - features/query-tracking
+    - features/query-tracing
     - features/error-tracking
     - features/alerts
   Integrations:

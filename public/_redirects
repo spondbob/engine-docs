@@ -34,3 +34,6 @@ https://engine-docs.apollographql.com/docs/engine/* https://www.apollographql.co
 
 # This is for Netlify
 / /docs/engine/
+
+# Typo, should be tracing
+/docs/engine/features/query-tracking.html /docs/engine/features/query-tracing.html
