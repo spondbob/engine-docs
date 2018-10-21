@@ -130,30 +130,33 @@ type Author @cacheControl(maxAge: 60) {
 You should receive cache control data in the `extensions` field of your response:
 
 ```js
-"cacheControl": {
-  "version": 1,
-  "hints": [
-    {
-      "path": [
-        "post"
-      ],
-      "maxAge": 240
-    },
-    {
-      "path": [
-        "post",
-        "votes"
-      ],
-      "maxAge": 30
-    },
-    {
-      "path": [
-        "post",
-        "readByCurrentUser"
-      ],
-      "scope": "PRIVATE"
-    }
-  ]
+"data": { ... },
+"extensions": {
+  "cacheControl": {
+    "version": 1,
+    "hints": [
+      {
+        "path": [
+          "post"
+        ],
+        "maxAge": 240
+      },
+      {
+        "path": [
+          "post",
+          "votes"
+        ],
+        "maxAge": 30
+      },
+      {
+        "path": [
+          "post",
+          "readByCurrentUser"
+        ],
+        "scope": "PRIVATE"
+      }
+    ]
+  }
 }
 ```
 
