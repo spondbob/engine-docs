@@ -11,7 +11,7 @@ Engine is not free if your account is sending more than 1 million requests a mon
 
 ### Trial Engine Pro
 
-Every Engine account is eligible for a free 2 week trial of Engine Pro, our most advanced plan, at any time, no credit card required. At the end of your Pro trial, you will be able to select which version of ngine you'd like to continue with.
+Every Engine account is eligible for a free 2 week trial of Engine Pro, our most advanced plan, at any time, no credit card required. At the end of your Pro trial, you will be able to select which version of Engine you'd like to continue with.
 
 ### Subscription interval options
 
@@ -47,7 +47,7 @@ If your query volume decreases to a different volume tier, you may request a dow
 
 You will be charged for your Engine subscription plan at the beginning of each usage period, based on your request volume and billing term you select (monthly or annually). Your Engine subscription plan automatically renews each billing term.
 
-Engine subscriptions can be purchased using any major credit card (Visa, MasterCard, American Express, and Discover) or PayPal. You can view and update your payment method in the Settings page f your Engien account.
+Engine subscriptions can be purchased using any major credit card (Visa, MasterCard, American Express, and Discover) or PayPal. You can view and update your payment method in the Settings page of your Engine account.
 
 Depending on the size of the invoice and billing term, you may arrange for alternative payment methods. Please <a href="mailto:support@apollographql.com">contact our solutions team</a> for more details.
 
