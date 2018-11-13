@@ -19,7 +19,7 @@ The following GraphQL servers support at least one of the Apollo GraphQL extensi
 
 1. **Node** with [Apollo Server](https://www.apollographql.com/docs/apollo-server/) natively supports Apollo Tracing and Apollo Cache Control. See [Node setup instructions](./setup-node.html) for a more streamlined Node setup option.
 2. **Ruby** with [GraphQL-Ruby](http://graphql-ruby.org/) supports Apollo Tracing with the [apollo-tracing-ruby](https://github.com/uniiverse/apollo-tracing-ruby) gem.
-3. **Java** with [GraphQL-Java](https://github.com/graphql-java/graphql-java) natively supports Apollo Tracing. [Read the docs about using Apollo Tracing.](http://graphql-java.readthedocs.io/en/latest/instrumentation.html#apollo-tracing-instrumentation)
+3. **Java** with [GraphQL-Java](https://github.com/graphql-java/graphql-java) natively supports Apollo Tracing. [Read the docs about using Apollo Tracing.](https://www.graphql-java.com/documentation/master/instrumentation/)
 4. **Scala** with [Sangria](https://github.com/sangria-graphql/sangria) supports Apollo Tracing with [sangria-slowlog](https://github.com/sangria-graphql/sangria-slowlog#apollo-tracing-extension) project.
 5. **Elixir** with [Absinthe](https://github.com/absinthe-graphql/absinthe) supports Apollo Tracing with the [apollo-tracing-elixir](https://github.com/sikanhe/apollo-tracing-elixir) package.
 
