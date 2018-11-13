@@ -20,7 +20,9 @@ For running on Heroku specifically, see our [Heroku Engine Proxy example repo](h
 
 <h2 id="enable-apollo-tracing" title="Enable Apollo Tracing">1. Enable Apollo Tracing</h2>
 
-You will need to instrument your GraphQL server with a [tracing package](apollo-tracing.html) that matches your server platform.  Engine relies on receiving data in this format to create its performance telemetry reports.
+You will need to instrument your GraphQL server with a [tracing package](https://github.com/apollographql/apollo-tracing#supported-graphql-servers) that matches your server platform.  Engine relies on receiving data in this format to create its performance telemetry reports.
+
+> Note: Apollo Server 2.x no longer requires a tracing package.  Instead, tracing is enabled automatically when an `ENGINE_API_KEY` is set in the environment, or when `engine: { apiKey: "XXX" }` is set to an Engine API key in the `ApolloServer` constructor options.
 
 <h2 id="configure-proxy" title="Configure the Proxy">2. Configure the Proxy</h2>
 <h3 id="get-api-key" title="Get your API Key">2.1 Get your API Key</h3>
