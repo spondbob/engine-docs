@@ -5,11 +5,9 @@ description: Safely evolve your schema over time
 
 GraphQL makes evolving an API much easier than it used to be with REST. As the demands of a client change, types, fields, and arguments can be added and removed without breaking the previous consumers of the API. In order to do this safely, it is critical to know how current clients are using the schema.
 
-Apollo Engine's schema history allows developers to confidently iterate a GraphQL schema by validating the new schema against field-level usage data from the previous schema. By knowing exactly which clients will be broken by a new schema, developers can avoid inadvertently deploying a breaking change.
+Apollo Engine's schema history allows developers to confidently iterate on a GraphQL schema by validating the new schema against field-level usage data from the previous schema. By knowing exactly which clients will be broken by a new schema, developers can avoid inadvertently deploying a breaking change.
 
 In addition to avoiding breaking changes, schema history allows developers to trace schema changes back to the original commit and find what else it may have been associated with.
-
-For more information and best practices about iterating a GraphQL endpoint over time, check out the in-depth [versioning guide](https://www.apollographql.com/docs/guides/versioning.html).
 
 <h2 id="setup">Publishing schemas</h2>
 
