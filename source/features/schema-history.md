@@ -11,39 +11,43 @@ In addition to avoiding breaking changes, schema history allows developers to tr
 
 <h2 id="setup">Publishing schemas</h2>
 
-To begin using schema history, make sure a schema is published to Apollo Engine using the [`apollo` command line interface (CLI)](https://npm.im/apollo). This is best accomplished from automatic steps within a continuous integration workflow and an example CircleCI configuration is available below.
+To begin using schema history, make sure a schema is published to Apollo Engine using the [`apollo`](https://npm.im/apollo) CLI. This is best accomplished via automatic steps within a continuous integration workflow (example CircleCI config below).
 
-Each time a schema is published, it becomes the basis for comparison for validating future schemas and avoiding breaking changes. Therefore, a schema should be re-published to Apollo Engine each time a new schema is deployed.
+Each time a schema is published, it becomes the basis for comparison to validate future schemas and avoid breaking changes. Therefore, a schema should be re-published to Apollo Engine each time a new schema is deployed.
 
 The `apollo` command helps facilitate the publishing and updating of schema within Apollo Engine. To configure it, follow the steps below! If you've already published your schema to Engine, you can skip to the _Version History_ section.
 
 <h3 id="install-apollo-cli">Install Apollo CLI</h3>
 
-To install the [`apollo`](https://npm.im/apollo) CLI, ensure that `node` and `npm` are installed, then run:
+To install the [`apollo`](https://npm.im/apollo) CLI, ensure that `node` and `npm` are installed. We recommend installing it to your `devDependencies` and running via [`npm-scripts`](https://docs.npmjs.com/misc/scripts) or [`npx`](https://npm.im/npx):
 
 ```bash
-npm install --global apollo
+npm install --save-dev apollo
 ```
 
-> Note: This guide will utilize the global installation method, but the `apollo` command can also be installed in a project's `devDependencies` and used via [`npm-scripts`](https://docs.npmjs.com/misc/scripts) or [`npx`](https://npm.im/npx).
+> Note: This guide will utilize the global installation method.
 
-<h3 id="publish-schema">Publish schema</h3>
+<h3 id="service-push">Publish schema</h3>
 
-Once the `apollo` command is installed, the `apollo schema:publish` command is used to publish a schema to Apollo Engine.
-
-To publish a schema, start the GraphQL server and run the following command, substituting the appropriate GraphQL endpoint URL and an API key:
+Once `apollo` is installed, the `apollo service:push` command is used to publish a schema to Apollo Engine. You'll need to provide an API key to your Engine service.
 
 > An API key can be obtained from a service's _Settings_ menu within the [Apollo Engine dashboard](https://engine.apollographql.com/).
 
+To publish the schema of a running server, use the `--endpoint` flag
+
 ```bash
-apollo schema:publish --key="<API_KEY>" --endpoint="https://example.com/graphql"
+apollo service:push --key="<API_KEY>" --endpoint="https://example.com/graphql"
 ```
 
-> For accuracy, it's best to retrieve the schema from a running GraphQL server (with introspection enabled), though the `--endpoint` can also reference a local file. See [schema sources](#schema-sources) for more information.
+To publish the schema using an introspection or schema definition (SDL), use the `--localSchemaFile` flag
+
+```bash
+apollo service:push --key="<API_KEY>" --localSchemaFile="path/to/schema.graphql"
+```
 
 <h2 id="history">Version history</h2>
 
-As your schema grows and evolves to meet the needs of your product, it is helpful to see a history of changes for a team. This allows everyone to know when new features were introduced, when old fields were removed, and even link back to the commit that caused the change. Apollo Engine provides all the tooling needed to track this history in a simple way. Every time your schema is updated, you can simply run the [`apollo schema:publish`](#publish-schema) command (demonstrated in the previous section) again to keep an up to date history of your schema.
+As your schema grows and evolves to meet the needs of your product, it is helpful to see a history of changes for a team. This allows everyone to know when new features were introduced, when old fields were removed, and even link back to the commit that caused the change. Apollo Engine provides all the tooling needed to track this history in a simple way. Every time your schema is updated, you can simply run the [`apollo service:push`](#service-push) command (demonstrated in the previous section) again to keep an up to date history of your schema.
 
 ![Schema History View](../img/schema-history/schema-history.png)
 
@@ -58,7 +62,7 @@ To check and see the difference between the current published schema and a new v
 > An API key can be obtained from a service's _Settings_ menu within the [Apollo Engine dashboard](https://engine.apollographql.com/).
 
 ```bash
-apollo schema:check --key="<API_KEY>" --endpoint="http://localhost:4000/graphql"
+apollo service:check --key="<API_KEY>" --endpoint="http://localhost:4000/graphql"
 ```
 
 > For accuracy, it's best to retrieve the schema from a running GraphQL server (with introspection enabled), though the `--endpoint` can also reference a local file. See [schema sources](#schema-sources) for more information.
@@ -83,17 +87,17 @@ Schema validation is best used when integrated in a team's development workflow.
 
 Go to [https://github.com/apps/apollo-engine](https://github.com/apps/apollo-engine) and click the `Configure` button to install the Apollo Engine integration on the appropriate GitHub profile or organization.
 
-<h3 id="check-schema-on-ci">Run validation on each commit</h3>
+<h3 id="service-check-on-ci">Run validation on each commit</h3>
 
 By enabling schema validation in a continuous integration workflow (e.g. CircleCI, etc.), validation can be performed automatically and potential problems can be displayed directly on a pull-request's status checks — providing feedback to developers where they can appreciate it the most.
 
-To run the validation command, the GraphQL server must have introspection enabled and run the `apollo schema:check` command. For more information, see [schema validation](#schema-validation) or see the configuration recommendations below.
+To run the validation command, the GraphQL server must have introspection enabled and run the `apollo service:check` command. For more information, see [schema validation](#schema-validation) or see the configuration recommendations below.
 
 ![GitHub Diff View](../img/schema-history/github-diff.png)
 
 <h3 id="publish-on-deploy">Publish to Apollo Engine after deploying</h3>
 
-In order to keep provide accurate analysis of breaking changes, it important to run the `apollo schema:publish` command each time the schema is deployed. This can be done by configuring continuous integration to run `apollo schema:publish` automatically on the `master` branch (or the appropriate mainline branch).
+In order to keep provide accurate analysis of breaking changes, it important to run the `apollo service:check` command each time the schema is deployed. This can be done by configuring continuous integration to run `apollo service:push` automatically on the `master` branch (or the appropriate mainline branch).
 
 Below is a sample configuration for validation and publishing using CircleCI:
 
@@ -110,9 +114,10 @@ jobs:
 
       - run: npm install
       # CircleCI needs global installs to be sudo
+      # Note: This step isn't needed if apollo is a devDependency
       - run: sudo npm install --global apollo
 
-      # Start the GraphQL server.  If a different command is used to
+      # Start the GraphQL server. If a different command is used to
       # start the server, use it in place of `npm start` here.
       - run:
           name: Starting server
@@ -124,23 +129,23 @@ jobs:
       - run: sleep 5
 
       # This will authenticate using the `ENGINE_API_KEY` environment
-      # variable. If the GraphQL server is available elsewhere than
+      # variable. If the GraphQL server is available somewhere other than
       # http://localhost:4000/graphql, set it with `--endpoint=<URL>`.
-      - run: apollo schema:check
+      - run: apollo service:check
 
       # When running on the 'master' branch, publish the latest version
       # of the schema to Apollo Engine.
       - run: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
-            apollo schema:publish
+            apollo service:push
           fi
 ```
 
 <h2 id="cli-commands">CLI usage</h2>
 
 - [`apollo help [COMMAND]`](#cli-help)
-- [`apollo schema:check`](#cli-schema-check)
-- [`apollo schema:publish`](#cli-schema-publish)
+- [`apollo service:check`](#cli-service-check)
+- [`apollo service:push`](#cli-service-push)
 
 <h3 id="cli-help">`apollo help [COMMAND]`</h3>
 
@@ -157,45 +162,52 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-<h3 id="cli-schema-check">`apollo schema:check`</h3>
+<h3 id="cli-service-check">`apollo service:check`</h3>
 
-Check a schema against the version registered in Apollo Engine.
+Check a service against known operation workloads to find breaking changes
 
 ```
 USAGE
+  $ apollo service:check
+
+OPTIONS
+  -c, --config=config  Path to your Apollo config file
+  -t, --tag=tag        [default: current] The published tag to check this service against
+  --endpoint=endpoint  The url of your service
+  --header=header      Additional headers to send to server for introspectionQuery
+  --key=key            The API key for the Apollo Engine service
+
+ALIASES
   $ apollo schema:check
-
-OPTIONS
-  -h, --help               Show command help
-  --endpoint=endpoint      [default: http://localhost:4000/graphql] The URL of the server to fetch the schema from
-  --header=header          Additional headers to send to server for introspectionQuery
-  --json                   Output result as JSON
-  --key=key                The API key for the Apollo Engine service
 ```
 
-<h3 id="cli-schema-publish">`apollo schema:publish`</h3>
+<h3 id="cli-service-push">`apollo service:push`</h3>
 
-Publish a schema to Apollo Engine
+Push a service to Engine
 
 ```
 USAGE
-  $ apollo schema:publish
+  $ apollo service:push
 
 OPTIONS
-  -h, --help               Show command help
-  -e, --endpoint=endpoint  [default: http://localhost:4000/graphql] The URL of the server to fetch the schema from
-  --header=header          Additional headers to send to server for introspectionQuery
-  --json                   Output successful publish result as JSON
-  --key=key                The API key for the Apollo Engine service
+  -c, --config=config                Path to your Apollo config file
+  -t, --tag=tag                      [default: current] The tag to publish this service to
+  --endpoint=endpoint                The url of your service
+  --header=header                    Additional headers to send to server for introspectionQuery
+  --key=key                          The API key for the Apollo Engine service
+  --localSchemaFile=localSchemaFile  Path to your local GraphQL schema file (introspection result or SDL)
+
+ALIASES
+  $ apollo schema:publish
 ```
 
 <h3 id="schema-sources">Schema sources</h3>
 
-The source of a schema is specified by using the `--endpoint` flag to the `apollo schema:*` commands. Typically, this should be set to the URL of a running GraphQL server (e.g. `--endpoint=https://localhost:4000/graphql`).
+The source of a schema is specified by using the `--endpoint` or `--localSchemaFile` flag to the `apollo service:*` commands.
 
 Using a GraphQL server that is currently running is recommended since it can be quickly tested against during development and, since it's running against the most recent code, avoids the possibility that a statically output schema file is outdated:
 
-For cases where running the GraphQL server _isn't_ possible, the `--endpoint` may also refer to a local file, either:
+For cases where running the GraphQL server _isn't_ possible, the `--localSchemaFile` flag may be used to point to either:
 
-1.  A `.json` file with the introspection query result. (e.g. `--endpoint=schema.json`)
-2.  A file with the schema in the GraphQL schema definition language (SDL). (e.g. `--endpoint=schema.graphql`)
+1.  A `.json` file with the introspection query result. (e.g. `--localSchemaFile=schema.json`)
+2.  A file with the schema in the GraphQL schema definition language (SDL). (e.g. `--localSchemaFile=schema.graphql`)
