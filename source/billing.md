@@ -5,21 +5,23 @@ description: Detailed information about Apollo Engine's plans and billing.
 
 ## Selecting your plan
 
-Engine is free for up to 1 million requests per month on the **Community** plan. Beyond that, we offer two subscription plans: **Standard** and **Pro**. Both Standard and Pro have tiered pricing options, longer data retention, and more features than the Community plan. You can view their details, feature breakdowns, and pricing charts <a href="https://www.apollographql.com/engine#plans" target="_blank">here</a>.
+Engine's core features are free to use in an unlimited capacity (no query or time limit) on the **Community** plan. This includes schema history tracking, schema change validation, schema usage analytics, and overviews of request metrics. There is no limit to the number of different schema versions you can register or requests you can send to Engine on the Community tier.
 
-Engine is not free if your account is sending more than 1 million requests a month. If your account exceeds that limit you will be blocked from seeing your data and asked to upgrade to a paid plan.
+For access to Engine's more advanced features of client-aware metrics, request tracing, third-party integrations, and longer data retention you'll need to join our **Team** plan, which has tiered pricing starting at $49/month. The full pricing chart is available [here](https://www.apollographql.com/plans/). For enterprise-level features such as single sign-on and 18 months of data retention, please [get in touch with our team](https://www.apollographql.com/support#contact-us).
 
-### Trial Engine Pro
+Our full plan table and feature chart is available [here](https://www.apollographql.com/plans/).
 
-Every Engine account is eligible for a free 2 week trial of Engine Pro, our most advanced plan, at any time, no credit card required. At the end of your Pro trial, you will be able to select which version of Engine you'd like to continue with.
+### Trial Apollo Team
+
+Every Engine account is eligible for a free 2 week trial of Apollo Team at any time, no credit card required. At the end of your trial features that are only availble on the Team plan will become protected again and you will be asked to upgrade if you'd like to continue using them.
 
 ### Subscription interval options
 
-Engine Standard and Pro subscriptions can be opted into annually or month-to-month. You can start on a monthly billing plan for Engine and switch to a pre-paid annual plan at any time by <a href="mailto:support@apollographql.com">contacting us</a>. You can view the pricing difference of paying annually vs. month-to-month [here](https://www.apollographql.com/engine#pricing). All annual plans are 20% discounted from the regular month-to-month prices. 
+Apollo Team subscriptions can be opted into annually or month-to-month. You can start on a monthly billing plan and switch to a pre-paid annual plan at any time by <a href="mailto:support@apollographql.com">contacting us</a>. You can view the pricing difference of paying annually vs. month-to-month [here](https://www.apollographql.com/plans/). All annual plans are 20% discounted from the regular month-to-month prices.
 
 ### Viewing your plan and usage
 
-You can view your Engine plan name and current query volume total for the current monthly period in the Settings page of your Engine account.
+You can view your plan name and current query volume total for the current monthly period in the **Settings** page of your Engine account.
 
 ### Downgrading to a lower query volume plan
 
@@ -32,7 +34,7 @@ You may request a downgrade from any paid plan to the free Community plan at any
 
 ## Query volume
 
-Engine plans are priced by the number of requests Engine records data for, accumulated across the services in your account. Paid Engine accounts do not get 1 million "free queries", that is only available in the Engine Community plan.
+The Team plan is priced by the number of requests Engine records data for, accumulated across the services in your account. Community accounts get unlimited access to Engine's core features with no request volume limit, but the pricing of Engine's Team plan is tiered based on query volume.
 
 ### Exceeding your plan's request limit
 
