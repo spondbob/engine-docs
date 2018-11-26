@@ -14,7 +14,7 @@ To do this, you'll need to:
 
 If you're using Node, we recommend running the Engine proxy with direction Web framework integration as opposed to within a Docker container inside of a separate app / dyno. In that case, follow the [Node setup instructions](setup-node.html). For all other platforms, the only available option is to run the proxy in a standalone docker container.
 
-If you're interested in writing direct a direct Engine web framework integration for your platform, <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">get in touch</a> with us!
+If you're interested in writing direct a direct Engine web framework integration for your platform, <a href="mailto:support@apollographql.com">get in touch</a> with us!
 
 For running on Heroku specifically, see our [Heroku Engine Proxy example repo](https://github.com/apollographql/engine-heroku-example).
 
@@ -74,7 +74,7 @@ For full configuration details see [Proxy config](proxy-config.html).
 
 It does not matter where you choose to deploy and manage your Engine proxy. We run our own on Amazon's [EC2 Container Service](https://aws.amazon.com/ecs/).
 
-We recognize that almost every team using Engine has a slightly different deployment environment, and encourage you to <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">contact us</a> with feedback or for help if you encounter problems running the Engine proxy.
+We recognize that almost every team using Engine has a slightly different deployment environment, and encourage you to <a href="mailto:support@apollographql.com">contact us</a> with feedback or for help if you encounter problems running the Engine proxy.
 
 <h2 id="view-metrics-in-engine" title="View Metrics in Engine">3. View Metrics in Engine</h2>
 Once your server is set up, navigate your new Engine service on https://engine.apollographql.com. Start sending requests to your GraphQL server to start seeing performance metrics!

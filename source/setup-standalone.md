@@ -141,7 +141,7 @@ In general, the Engine config file is the same as the argument Node GraphQL user
 
 You can find the complete set of configuration that Engine accepts in the [full API docs](./proxy-config.html) page, and some commonly-used fields worth knowing about are described below in the [`new ApolloEngineLauncher()` docs](#api-apollo-engine-launcher).
 
-We recognize that almost every team using Engine has a slightly different deployment environment, and encourage you to <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">contact us</a> with feedback or for help if you encounter problems running the Engine Proxy.
+We recognize that almost every team using Engine has a slightly different deployment environment, and encourage you to <a href="mailto:support@apollographql.com">contact us</a> with feedback or for help if you encounter problems running the Engine Proxy.
 
 <h2 id="api">API</h2>
 

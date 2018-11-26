@@ -34,7 +34,7 @@ At this point, you should receive a confirmation message from Engine in the Slac
 
 After confirmation, the first report should appear up in the configured Slack channel within 24 hours, and additional reports should be delivered each day at 9am Pacific time.
 
-> If you don't receive the confirmation or the report doesn't show up after 24 hours, please reach out to <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">support</a> so we can help you get things set up!
+> If you don't receive the confirmation or the report doesn't show up after 24 hours, please reach out to <a href="mailto:support@apollographql.com">support@apollographql.com</a> so we can help you get things set up!
 
 <h2 id="usage">Using the report</h2>
 

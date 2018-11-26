@@ -91,7 +91,7 @@ This will make the Engine proxy available at `http://localhost:3001`.
 
 It does not matter where you choose to deploy and manage your Engine proxy. We run our own on Amazon's [EC2 Container Service](https://aws.amazon.com/ecs/).
 
-We recognize that almost every team using Engine has a slightly different deployment environment, and encourage you to <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">contact us</a> with feedback or for help if you encounter problems running the Engine proxy.
+We recognize that almost every team using Engine has a slightly different deployment environment, and encourage you to <a href="mailto:support@apollographql.com">contact us</a> with feedback or for help if you encounter problems running the Engine proxy.
 
 <h2 id="view-metrics-in-engine" title="View Metrics in Engine">3. View Metrics in Engine</h2>
 

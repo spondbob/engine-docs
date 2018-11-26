@@ -66,7 +66,7 @@ app.use('/graphql', bodyParser.json(), graphqlExpress({
 }));
 ```
 
-Apollo Server includes built-in support for Apollo Cache Control from version 1.2.0 onwards. If you are using `express-graphql`, we recommend you switch to Apollo Server to use caching. Both `express-graphql` and Apollo Server are based on the [`graphql-js`](https://github.com/graphql/graphql-js) reference implementation, and switching should only require changing a few lines of code. We're working with the community to add support for Apollo Cache Control to non-Node GraphQL server libraries. <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">Contact us</a> if you are interested in joining the community to work on support for `express-graphql` or non-Node GraphQL servers.
+Apollo Server includes built-in support for Apollo Cache Control from version 1.2.0 onwards. If you are using `express-graphql`, we recommend you switch to Apollo Server to use caching. Both `express-graphql` and Apollo Server are based on the [`graphql-js`](https://github.com/graphql/graphql-js) reference implementation, and switching should only require changing a few lines of code. We're working with the community to add support for Apollo Cache Control to non-Node GraphQL server libraries. <a href="mailto:support@apollographql.com">Contact us</a> if you are interested in joining the community to work on support for `express-graphql` or non-Node GraphQL servers.
 
 Next, set [hints in your schema](#hints-to-schema), or [dynamically in your resolvers](#resolver-hints).
 
@@ -408,7 +408,7 @@ There are currently implementations that allow you to use the Apollo Tracing for
 4. **Scala** with [Sangria](https://github.com/sangria-graphql/sangria): [Use this snippet](https://gist.github.com/OlegIlyenko/124b55e58609ad45fcec276f15158d16)
 5. **Elixir** with [Absinthe](https://github.com/absinthe-graphql/absinthe): [apollo-tracing-elixir](https://github.com/sikanhe/apollo-tracing-elixir)
 
-Using a different server? <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">Let us know</a> – the development of our tracing agents is community driven and we would love to start a conversation with you!
+Using a different server? <a href="mailto:support@apollographql.com">Let us know</a> – the development of our tracing agents is community driven and we would love to start a conversation with you!
 
 <h2 id="query-batching">Query batching</h2>
 

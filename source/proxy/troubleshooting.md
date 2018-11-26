@@ -2,7 +2,7 @@
 title: Setup troubleshooting
 ---
 
-If you hit any issues in setting up Engine for your GraphQL service, we're here to help! First, follow these troubleshooting steps to check for any obvious issues. If these don't help, please submit a support ticket to <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">Apollo support</a> and we'll work with you to get you up and running!
+If you hit any issues in setting up Engine for your GraphQL service, we're here to help! First, follow these troubleshooting steps to check for any obvious issues. If these don't help, please submit a support ticket to <a href="mailto:support@apollographql.com">Apollo support</a> and we'll work with you to get you up and running!
 
 <h2 id="sanity-checks" title="First steps">First Troubleshooting steps</h2>
 
@@ -77,4 +77,4 @@ Please include the following when submitting an issue to our support team:
 * Platform of GraphQL server
 * The query submitted and the full response
 
-Submit your issue to <a href="javascript:void(0);" onclick="Intercom('showNewMessage')">Apollo support</a> or you can join us in the public [#engine Slack Channel](https://www.apollographql.com/slack).
+Submit your issue to <a href="mailto:support@apollographql.com">Apollo support</a> or you can join us in the public [#engine Slack Channel](https://www.apollographql.com/slack).

@@ -35,4 +35,4 @@ The legal terms and policies that apply to MDG's corporate websites and customer
 
 <h3 id="more">Where can I get more help?</h3>
 
-If you have any questions (including interest in a Data Processing Addendum (DPA)), or encounter any issues, please reach out to <a href="javascript:Intercom('showNewMessage');">support</a>.
+If you have any questions (including interest in a Data Processing Addendum (DPA)), or encounter any issues, please reach out to <a href="mailto:support@apollographql.com">support@apollographql.com</a>.
